@@ -62,6 +62,7 @@ public final  class MyRedisUtil {
 
     }
 
+
     public static String get(String key){
         String value = null;
         JedisCluster jedisCluster = getJedisCluster();
@@ -74,7 +75,7 @@ public final  class MyRedisUtil {
         JedisCluster jedisCluster = getJedisCluster();
         jedisCluster.del(key);
     }
-
+    
 
     public static String hget(String key,String field){
         String value = null;
